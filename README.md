@@ -4,32 +4,32 @@
 
 #
 
->   安装： npm install async-series-each --save-dev
+>       安装： npm install async-series-each --save-dev
 
 #
 
 ## 提供的遍历器： ##
 
 +  forEach(callback[, thisArg])  
->  调用方法及参数和同步版本forEach(Array.prototype.forEach)一致，功能也一致。
+>       调用方法及参数和同步版本forEach(Array.prototype.forEach)一致，功能也一致。
 
 +  every(callback[, thisArg])
->  调用方法及参数和同步版本every(Array.prototype.every)一致，功能也一致。
+>       调用方法及参数和同步版本every(Array.prototype.every)一致，功能也一致。
 
 +  some(callback[, thisArg])
->  调用方法及参数和同步版本some(Array.prototype.some)一致，功能也一致。
+>       调用方法及参数和同步版本some(Array.prototype.some)一致，功能也一致。
 
 +  filter(callback[, thisArg])
->  调用方法及参数和同步版本filter(Array.prototype.filter)一致，功能也一致。
+>       调用方法及参数和同步版本filter(Array.prototype.filter)一致，功能也一致。
 
 +  map(callback[, thisArg])
->  调用方法及参数和同步版本map(Array.prototype.map)一致，功能也一致。
+>       调用方法及参数和同步版本map(Array.prototype.map)一致，功能也一致。
 
 +  reduce(callback[, fir])
->  调用方法及参数和同步版本reduce(Array.prototype.reduce)一致，功能也一致。
+>       调用方法及参数和同步版本reduce(Array.prototype.reduce)一致，功能也一致。
 
 +  sort(callback)
->  调用方法及参数和同步版本sort(Array.prototype.sort)一致，功能也一致。内部采用的是插入排序，海量数据慎用。
+>       调用方法及参数和同步版本sort(Array.prototype.sort)一致，功能也一致。内部采用的是插入排序，海量数据慎用。
 
 +  你可以通过插件编写需要的遍历器
 
@@ -37,7 +37,7 @@
 
 ## 用法： ##
 
->  建议安装promise化工具： npm install new-promiseify --save-dev
+>       建议安装promise化工具： npm install new-promiseify --save-dev
 
 ### 调用环境应该是在async函数内部或者Promise实例的回调函数内部 ###
 
@@ -95,15 +95,15 @@
 
 ## 一点说明 ##
 
->  为什么不直接在Array.prototype上拓展？
-
->  因为我希望这个拓展是温和的，而不是具有侵入性的。
+>       为什么不直接在Array.prototype上拓展？
+>
+>       因为我希望这个拓展是温和的，而不是具有侵入性的。
 
 #
 
 ## 插件的写法 ##
 
-以some方法为例
+>       以some方法为例
 
        module.exports = function SomeAsyncPlugin(Series) {
           //Regist some command to prototype of Series
