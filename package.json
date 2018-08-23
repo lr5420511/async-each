@@ -1,0 +1,30 @@
+{
+    "name": "async-series-each",
+    "version": "1.0.0",
+    "description": "一个提供了异步遍历功能的工具，可以通过插件拓展工具的遍历器。已经提供的方法包括forEach，every，some，filter，map，sort，reduce。",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lr5420511/async-each.git"
+    },
+    "keywords": [
+        "async",
+        "each",
+        "array",
+        "eacher",
+        "callback"
+    ],
+    "author": "lr5420511",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lr5420511/async-each/issues"
+    },
+    "homepage": "https://github.com/lr5420511/async-each#readme",
+    "devDependencies": {}
+}
